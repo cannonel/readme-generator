@@ -1,5 +1,4 @@
-const fs = require('fs');
-
+const fs = require("fs");
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
@@ -14,12 +13,14 @@ ${data.description}
 </a>
 
 ## Table of Contents
+
 [Installation](#installation)<br>
 [Usage](#usage)<br>
 [License](#license)<br>
 [Contributing](#contributing)<br>
 [Tests](#tests)<br>
 [Questions](#questions)<br>
+
 ----
 ## Installation
 ${data.installation}
@@ -27,20 +28,16 @@ ${data.installation}
 ## Usage
 ${data.usage}
 
-## License
-${data.license}
-
-## Contributing
+## Contributing:
 ${data.contribution}
 
-## Testing:
+## Test
 ${data.test}
-
 ----
 ## Questions
 Feedback and questions are always welcome!
 [Github](https://github.com/${data.github})
 [Email](mailto:${data.email})
-`
-};
+`;
+}
 module.exports = generateMarkdown;

@@ -1,10 +1,10 @@
-// TODO: Include packages needed for this application
-const { writeFile, copyFile } = require('./utils/generateMarkdown.js');
 const inquirer = require("inquirer");
-const fs = require("fs");
-const generateMarkdown = require('./utils/generateMarkdown.js');
-
-
+const fs = require('fs');
+const genMarkdown = require('./utils/generateMarkdown.js');
+// import genMarkdown from "./src/page-template.js";
+// import writeFile from './utils/gen-md.js'
+// const writeFile = require("./utils/gen-md.js");
+//was promptUser
 const promptReadme = () => {
     console.log(`
   =================
@@ -93,7 +93,7 @@ const promptReadme = () => {
           {
             type: "checkbox",
             name: "license",
-            message: "Choose a license for your project: ",
+            message: "Choose a license for your project:  ",
             choices: ["MIT", "Apache-2.0", "ISC", "None"],
           },
         {
@@ -125,8 +125,8 @@ const promptReadme = () => {
       ])
       .then((userInput) => {
         console.log(userInput)
-        return writeToFile('./dist/README.md', generateMarkdown(userInput));
-        // return generateMarkdown(userInput);
+        return writeToFile('./dist/README.md', genMarkdown(userInput));
+        // return genMarkdown(userInput);
       })
     };
   // TODO: Create a function to write README file
@@ -142,4 +142,3 @@ const promptReadme = () => {
 // TODO: Create a function to initialize app
 promptReadme();
 // Function call to initialize app
-
