@@ -17,6 +17,9 @@ In the computer's terminal, run the command "node app" to access the README-gene
 will be prompted with questions regarding your GitHub project and what information you would like to include 
 about it. After looping through the required prompts, the generator will dynamically create your README.md file
 
+## Video walkthrough of app 
+[Link to video](https://drive.google.com/file/d/12hjrdrK796ZMEnDnLPvVbl1qAtyQWF38/view)
+
 ## Contributing
 Erika Cannon
 
