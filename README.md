@@ -20,6 +20,8 @@ about it. After looping through the required prompts, the generator will dynamic
 ## Video walkthrough of app 
 [Link to video](https://drive.google.com/file/d/12hjrdrK796ZMEnDnLPvVbl1qAtyQWF38/view)
 
+<img src=".\Preview-gif.gif">
+
 ## Contributing
 Erika Cannon
 
